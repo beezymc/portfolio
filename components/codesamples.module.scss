@@ -1,0 +1,26 @@
+.container {
+    padding: 50px;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.contentTitle {
+    text-align: center;
+    font-size: 70px;
+}
+
+@media (max-width: 500px) {
+    .contentTitle {
+        font-size: 35px;
+    }
+}

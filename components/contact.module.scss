@@ -1,0 +1,136 @@
+.contentTitle {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 50px;
+  margin-bottom: 5%;
+}
+
+//.sendbutton, nameError, emailError, messageError, successMessage, bottomInput, topInput, inputsContainer, .formContainer
+
+.formContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px 10px 15px 10px;
+  .inputsContainer {
+    display: flex;
+    direction: row;
+    margin-bottom: 20px;
+    .topInput {
+      padding: 5px 20px;
+      line-height: 30px;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+      font-family: inherit;
+    }
+    .topInput:first-child {
+      margin: 0 10px 0 0;
+    }
+    .topInput:nth-child(2) {
+      margin: 0 0 0 10px;
+    }
+  }
+  .bottomInput {
+    height: 400px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    font-family: inherit;
+    padding: 5px 20px;
+    line-height: 30px;
+  }
+  .sendButton {
+    text-align: center;
+    font-family: inherit;
+  }
+}
+
+@media (max-width: 420px) {
+  .formContainer {
+    .inputsContainer {
+      flex-direction: column;
+      margin: 0 0 10px 0;
+      .topInput:first-child {
+        margin: 0 0 10px 0;
+      }
+      .topInput:nth-child(2) {
+        margin: 0;
+      }
+    }
+    .sendButton {
+      text-align: center;
+    }
+  }
+}
+
+.textArea {
+  padding: 10px 20px;
+  line-height: 22px;
+  resize: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  font-family: inherit;
+}
+
+.sendButton {
+  background-color: #339fff;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 7px 32px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  float: right;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.Error {
+  background-color: orangered;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  font-family: inherit;
+  padding: 7px 32px;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 30% 2% 30%;
+}
+
+.successMessage{
+  background-color: #00A300;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  font-family: inherit;
+  padding: 7px 32px;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 30% 2% 30%;
+}

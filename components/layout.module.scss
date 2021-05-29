@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.container {
+    height: 100vh;
+}
+
+.body {
+    margin: 0;
+}
+
+.a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #339fff;
+    height: 140px;
+    font-family: "Press Start 2P";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    .nameSpace {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        flex: 40%;
+        .name {
+            font-size: 2.2vw;
+        }
+        .title {
+            font-size: 1vw;
+        }
+    }
+    .navigation {
+        text-align: center;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex: 60%;
+        .navigationItems {
+            margin: 10px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 91%;
+    font-family: "Press Start 2P";
+
+    .imgContainer {
+        height: 100%;
+        width: 70%;
+        flex-direction: column;
+        flex: 40%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content {
+        background-color: black;
+        color: white;
+        justify-content: center;
+        font-family: "share tech";
+        width: 100%;
+        flex-direction: column;
+        flex: 60%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .nameSpace {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .imgContainer {
+        display: none;
+    }
+}
